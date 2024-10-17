@@ -16,7 +16,7 @@
 #include <OgreViewport.h>
 #include <OgreHighLevelGpuProgramManager.h>
 #include <OgreHighLevelGpuProgram.h>
-#include <OgreUnifiedHighLevelGpuProgram.h>
+//#include <OgreUnifiedHighLevelGpuProgram.h>
 #include <OgreRoot.h>
 #include <OgreTechnique.h>
 #include <OgreTextureUnitState.h>
@@ -448,7 +448,7 @@ void ImguiManager::ImGUIRenderable::initImGUIRenderable(void)
     mRenderOp.indexData->indexStart = 0;
     mRenderOp.operationType             = RenderOperation::OT_TRIANGLE_LIST;
     mRenderOp.useIndexes                                    = true;
-    mRenderOp.useGlobalInstancingVertexBufferIsAvailable    = false;
+    mRenderOp.useGlobalInstancing                           = false;
 
     VertexDeclaration* decl     = mRenderOp.vertexData->vertexDeclaration;
 

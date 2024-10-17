@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 2.8.12)
 project(OgreImgui)
 
 # specify which version you need
-find_package(OGRE 1.10 REQUIRED)
+find_package(OGRE REQUIRED)
 find_package(Freetype QUIET)
 
 # the search paths
